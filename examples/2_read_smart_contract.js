@@ -1,6 +1,6 @@
 const { ethers } = require("ethers");
 
-const INFURA_ID = ''
+const INFURA_ID = '6fe46b32e9f14791be3eaaf00a8e9a96'
 const provider = new ethers.providers.JsonRpcProvider(`https://mainnet.infura.io/v3/${INFURA_ID}`)
 
 const ERC20_ABI = [
@@ -30,3 +30,24 @@ const main = async () => {
 }
 
 main()
+
+
+// const {ethers}  = require("ethers");
+// const Infura_ID ='6fe46b32e9f14791be3eaaf00a8e9a96';
+// const provider = new ethers.providers.JsonRpcProvider(`https://ropsten.infura.io/v3/${Infura_ID}`);
+// const ERC20_ABI=[
+//     "function balanceOf(address) view returns (uint256)",
+//     "function decimals() view returns (uint8)",
+//     "function symbol() view returns (string)",
+//     "function name() view returns (string)",
+// ]
+
+// const address="0x00613588cA2df15Bc6F1E74d21B747B5FfE2651c"
+// const contract = new ethers.Contract( address , ERC20_ABI , provider )
+
+// const name= contract.name;
+// const balance=contract.balanceOf(address);
+// const symbol=contract.symbol;
+// const decimals=contract.decimals;
+
+// console.log(name);
